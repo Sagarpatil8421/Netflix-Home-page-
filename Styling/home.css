@@ -1,0 +1,239 @@
+* {
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+  background-color: #222222;
+}
+
+.container-fluid {
+  padding: 0px;
+  min-height: 100vh;
+  margin: 0px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.671),
+      rgba(0, 0, 0, 0.533),
+      rgba(0, 0, 0, 0.671)
+    ),
+    url("../Images/netflixbg.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.width-box {
+  padding: 23px 0px 0px 0px;
+  margin: auto;
+  height: 100%;
+  max-width: 1430px;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-box .logo img {
+  width: 176px;
+}
+
+.btns-box .lng {
+  margin-right: 30px;
+  width: 100px;
+  padding: 4px 7px !important;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  font-size: 1rem;
+  border-radius: 3px !important;
+}
+
+.btns-box .lng option {
+  background-color: rgb(162, 161, 161);
+}
+
+.btns-box .sign-in {
+  background-color: #e50914;
+  padding: 7px 17px !important;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+}
+
+.main-box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  height: 85vh;
+  padding: 0px 350px;
+  padding-top: 50px;
+  margin: 0px;
+}
+
+.main-box h1 {
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  font-size: 64px;
+}
+
+.main-box h3 {
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+}
+
+.main-box h5 {
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.main-box .fom-btn {
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+}
+
+.main-box .email-btn {
+  background-color: #e50914;
+  color: white;
+  font-size: 30px;
+  border-radius: 0px 3px 3px 0px;
+  font-weight: 400;
+}
+
+.main-box .form-floating > .form-control,
+.form-floating > .form-select {
+  height: calc(4.6rem + 1px);
+  border-radius: 3px 0px 0px 3px;
+}
+
+/* Medium devices (small laptop, 1024px)*/
+@media (max-width: 1024px) {
+  .width-box {
+    max-width: 930px;
+    padding-top: 25px;
+  }
+
+  .header-box .logo img {
+    width: 145px;
+  }
+
+  .btns-box .lng {
+    padding: 4px 5px !important;
+  }
+
+  .main-box {
+    padding: 0px 150px;
+    height: 84vh;
+  }
+
+  .main-box h1 {
+    font-size: 50px;
+  }
+
+  .main-box .form-floating > .form-control,
+  .form-floating > .form-select {
+    height: calc(4.1rem + 1px);
+  }
+}
+
+/* Medium devices (tablets, 768px and less)*/
+@media (max-width: 768px) {
+  .width-box {
+    padding: 25px 40px 0px 40px;
+  }
+
+  .header-box .logo img {
+    width: 115px;
+  }
+
+  .main-box {
+    padding: 0px 90px;
+    height: 84vh;
+  }
+
+  .main-box h1 {
+    font-size: 45px;
+  }
+
+  .main-box .form-floating > .form-control,
+  .form-floating > .form-select {
+    height: calc(3.8rem + 1px);
+  }
+
+  .main-box .fom-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .main-box .email-btn {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+/* small devices (mobile 576px)*/
+@media (max-width: 576px) {
+  .container-fluid {
+    min-height: 80vh;
+  }
+  .width-box {
+    padding: 0px 20px;
+    padding-top: 27px;
+  }
+
+  .header-box .logo img {
+    width: 115px;
+  }
+
+  .main-box {
+    padding: 0px 0px;
+    height: 80vh;
+  }
+
+  .main-box h1 {
+    font-size: 26px;
+  }
+
+  .main-box h3 {
+    font-size: 18px;
+  }
+  .main-box h5 {
+    font-size: 19px;
+    padding-top: 15px;
+  }
+
+  .main-box .form-floating > .form-control,
+  .form-floating > .form-select {
+    height: calc(3.2rem + 1px);
+  }
+
+  .main-box .fom-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .main-box .email-btn {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .btns-box .lng {
+    margin-right: 8px;
+    width: 90px;
+    padding: 4px 7px !important;
+    font-size: 14px;
+  }
+
+  .btns-box .sign-in {
+    padding: 3px 7px !important;
+    font-size: 14px;
+  }
+}
